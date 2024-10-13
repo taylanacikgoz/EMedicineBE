@@ -1,6 +1,7 @@
 ﻿using System.Security.Principal;
 using System;
 using System.Text.Json.Serialization;
+using Azure.Core.Serialization;
 
 namespace EMedicineBE.Models
 {
@@ -32,5 +33,8 @@ namespace EMedicineBE.Models
 
         [JsonPropertyName("createdOn")]
         public DateTime CreatedOn { get; set; }
+
+        [JsonPropertyName("orderType")]
+        public string OrderType { get; set; }
     }
 }
