@@ -32,5 +32,7 @@ namespace EMedicineBE.Models
         [JsonPropertyName("status")]
         public int Status { get; set; }
 
+        [JsonPropertyName("type")]
+        public string Type { get; set; }
     }
 }

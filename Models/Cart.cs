@@ -21,5 +21,8 @@ namespace EMedicineBE.Models
 
         [JsonPropertyName("totalPrice")]
         public decimal TotalPrice { get; set; }
+
+        [JsonPropertyName("medicineId")]
+        public int MedicineID { get; set; }
     }
 }
